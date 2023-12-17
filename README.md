@@ -4,4 +4,4 @@ This is an official implementation of "[Study on Lightweight and Efficient Deep 
 
 You can download the training data from [here].(https://drive.google.com/drive/folders/1he5Vfy6xxTmBefEwbisk3aCKo1oAKgtt?usp=sharing)
 
-You can use the training data anywhere in the system. (By default, "checkpoint folder")
+You can use the training data anywhere you put in the system. (By default, "checkpoint folder")
