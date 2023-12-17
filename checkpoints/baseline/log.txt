@@ -1,0 +1,34 @@
+[2022-11-18 23:44:19,829][train.py][L279][INFO] image compression training
+[2022-11-18 23:44:19,829][train.py][L280][INFO] config : 
+[2022-11-18 23:44:19,829][train.py][L281][INFO] {
+    "tot_epoch": 10000000,
+    "tot_step": 500000,
+    "train_lambda": 4096,
+    "lr": {
+        "base": 0.0001,
+        "decay": 0.1,
+        "decay_interval": 220000
+    },
+    "batch_size": 4,
+    "print_freq": 200,
+    "save_model_freq": 5000
+}
+
+[2022-11-18 23:44:23,315][train.py][L122][INFO] Epoch 0 begin
+[2022-11-19 00:13:42,165][train.py][L279][INFO] image compression training
+[2022-11-19 00:13:42,165][train.py][L280][INFO] config : 
+[2022-11-19 00:13:42,165][train.py][L281][INFO] {
+    "tot_epoch": 10000000,
+    "tot_step": 500000,
+    "train_lambda": 4096,
+    "lr": {
+        "base": 0.0001,
+        "decay": 0.1,
+        "decay_interval": 220000
+    },
+    "batch_size": 4,
+    "print_freq": 200,
+    "save_model_freq": 5000
+}
+
+[2022-11-19 00:13:45,734][train.py][L122][INFO] Epoch 0 begin
