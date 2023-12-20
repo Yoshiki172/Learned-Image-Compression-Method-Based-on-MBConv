@@ -144,23 +144,5 @@ class AutoEncoder(torch.nn.Module):
         total_y_bpp = (Y_bits)/(batch_size*inputs.shape[2]*inputs.shape[3])
         total_bpp = total_y_bpp + total_z_bpp
         
-        #edge_loss
-        """
-        avg_kernel = torch.FloatTensor([[1/9, 1/9, 1/9], 
-                                    [1/9, 1/9, 1/9], 
-                                    [1/9, 1/9, 1/9]])
-        avg_filter = avg_kernel.expand(3, 3, 3, 3).to(device)
-        avg_inputs = F.conv2d(inputs, avg_filter,padding=1)
-        avg_outputs = F.conv2d(outputs, avg_filter,padding=1)
-        
-        lap_kernel = torch.FloatTensor([[1, 1, 1], 
-                                        [1, -8, 1], 
-                                        [1, 1, 1]])
-        lap_filter = lap_kernel.expand(3, 3, 3, 3).to(device)
-
-        lap_inputs = F.conv2d(inputs, lap_filter,padding=1)
-        lap_recon = F.conv2d(outputs, lap_filter,padding=1)
-        lap_mse_loss = torch.mean((lap_recon - lap_inputs).pow(2))
-        """
         return outputs,mse_loss,total_bpp,total_y_bpp,total_z_bpp
     
